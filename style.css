@@ -1,0 +1,224 @@
+body{
+    background-color: rgb(241,242,244);
+}
+/* Navbar */
+/* logo */
+#nav{
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 14px; */
+    width: 100vw;
+    height: 65px;
+    background-color: rgb(255,255,255);
+}
+
+#nav1{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo_part{
+    font-size: 21px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(255,194,0);
+}
+
+#logo_part2{
+    font-size: 14px;
+    color: rgb(158,158,158);
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+#logo_part3{
+    color: blue;
+}
+
+
+/* search bar */
+#inputSearch{
+    border: none;
+    width: 360px;
+    height: 21px;
+    /* border: 1px solid pink; */
+    padding-left: 12px;
+    background-color: rgb(240,245,255);
+}
+
+
+.navbar{                             /*making all the text and image on same level*/
+    display: flex;
+    align-items: center;
+}
+
+
+#becomeSeller{
+    font-size: 16px;
+    font-family: sans-serif;
+    padding-left: 12px;
+}
+
+
+/* searchbar background */
+#searchBar{
+    background-color: rgb(240,245,255);
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+
+
+/* signIn */
+#signIn{
+    font-size: 16px;
+    font-family: sans-serif;
+    padding-left: 12px;
+}
+
+select{
+    border: none;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+
+/* cart */
+#cart{
+    font-size: 16px;
+    font-family: sans-serif;
+    padding-left: 12px;
+}
+
+
+/* 1st categories row */
+#categories{
+    display: flex;
+    justify-content: space-around;
+    margin: 8px 14px 14px 14px;
+    /* margin: auto; */
+    border: none;
+    background-color: rgb(255,255,255);
+}
+
+
+/* change image size */
+/* #categories > div > img{
+
+}
+ */
+
+#categories > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* 2nd row of categories */
+#secondRowOfCategory{
+    display: flex;
+    justify-content: space-around;
+    margin: 16px 14px 14px 14px;
+    background-color: rgb(255,255,255);
+    padding-top: 10px;
+}
+
+
+#secondRowOfCategory > div > img{
+    width: 160px;
+    height: 200px;
+}
+
+#secondRowOfCategory > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Footer section */
+li{
+    list-style: none;
+}
+
+
+#footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    margin-top: 30px;
+}
+
+
+.footerHeading{
+    color: orangered;
+}
+
+
+#imageSlider{
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+
+
+@media (max-width: 576px) {
+    /* Navbar */
+    #nav {
+      flex-direction: column;
+      height: auto;
+    }
+
+    #logo_part,
+    #logo_part2,
+    #logo_part3 {
+      font-size: 16px;
+    }
+
+    #inputSearch {
+      width: 100%;
+    }
+
+    #searchBar {
+      padding: 10px;
+    }
+
+    #becomeSeller,
+    #signIn,
+    #cart {
+      font-size: 14px;
+    }
+
+    /* 1st categories row */
+    #categories {
+      flex-direction: column;
+      height: auto;
+    }
+
+    #categories > div > img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* 2nd row of categories */
+    #secondRowOfCategory {
+      flex-direction: column;
+      height: auto;
+    }
+
+    #secondRowOfCategory > div > img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Footer section */
+    #footer {
+      flex-direction: column;
+      height: auto;
+    }
+}
